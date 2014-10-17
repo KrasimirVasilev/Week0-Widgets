@@ -4,6 +4,8 @@
     <string name="app_name">Week0-Widgets</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="action_video">Go to video</string>
     <string name="hex_code_required_message">Hex code is required!</string>
+    <string name="title_activity_video">VideoActivity</string>
 
 </resources>
