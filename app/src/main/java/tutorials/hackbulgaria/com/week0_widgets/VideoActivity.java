@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.VideoView;
 
+import java.io.File;
+
 
 public class VideoActivity extends Activity implements View.OnClickListener {
 
@@ -39,7 +41,8 @@ public class VideoActivity extends Activity implements View.OnClickListener {
         playButton.setOnClickListener(this);
         nextButton.setOnClickListener(this);
 
-        String videoPath = Environment.getExternalStorageDirectory() + "/Ronaldo_Dive_Moti.mp4";
+        File downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+        String videoPath = downloadsDir.getPath() + "/Ronaldo_Dive_Moti.mp4";
         Uri videoUri = Uri.parse(videoPath);
         videoView.setVideoURI(videoUri);
     }
